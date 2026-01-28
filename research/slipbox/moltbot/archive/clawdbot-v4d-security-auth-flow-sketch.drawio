@@ -1,0 +1,72 @@
+<mxfile host="65bd71144e">
+  <diagram id="security-auth" name="Security and Auth Flow">
+    <mxGraphModel dx="828" dy="347" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="Security and Auth: Connect Handshake + Pairing + Policies" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=24;fontColor=#202124;sketch=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="20" width="880" height="44" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="lane_client" value="CLIENT" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#FEEFC3;strokeColor=#E37400;fontColor=#5D4200;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="60" y="100" width="420" height="720" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="lane_gateway" value="GATEWAY" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#C6DAFC;strokeColor=#1A73E8;fontColor=#0D47A1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="520" y="100" width="520" height="720" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="lane_store" value="STORES" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#DADCE0;strokeColor=#5F6368;fontColor=#202124;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="100" width="460" height="720" as="geometry"/>
+        </mxCell>
+
+        <!-- Steps -->
+        <mxCell id="c1" value="1) WS connect()\n- deviceId\n- role: client/node\n- auth token/password\n- optional challenge" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#F1F3F4;strokeColor=#5F6368;fontColor=#202124;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="90" y="160" width="360" height="110" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="g1" value="2) Validate connect\n- schema check\n- auth mode check\n- idempotency requirements" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#C6DAFC;strokeColor=#1A73E8;fontColor=#0D47A1;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="590" y="160" width="380" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s1" value="Device pairing store\n- approved device IDs\n- issued device tokens" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#F1F3F4;strokeColor=#5F6368;fontColor=#202124;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="170" width="380" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="g2" value="3) Pairing decision\n- local auto-approve (optional)\n- remote requires approval\n- issue device token" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#FEEFC3;strokeColor=#E37400;fontColor=#5D4200;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="590" y="280" width="380" height="110" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c2" value="4) hello-ok\n- presence + health snapshot\n- device token (if newly paired)" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#CEEAD6;strokeColor=#188038;fontColor=#0B5323;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="90" y="300" width="360" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="g3" value="5) Side-effecting requests\n(send / agent / node.*)\nrequire idempotency keys" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#FAD2CF;strokeColor=#C5221F;fontColor=#7F0000;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="590" y="430" width="380" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s2" value="Dedupe cache\n(short-lived)" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#F1F3F4;strokeColor=#5F6368;fontColor=#202124;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="440" width="260" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="g4" value="6) Tool calls guarded\nHooks: PreToolUse / PostToolUse\nApproval for risky actions" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#FEEFC3;strokeColor=#E37400;fontColor=#5D4200;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="590" y="550" width="380" height="110" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s3" value="Logs / audit\n- tool events\n- errors\n- approvals" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#F1F3F4;strokeColor=#5F6368;fontColor=#202124;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="575" width="380" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- edges -->
+        <mxCell id="e1" value="connect" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#5F6368;" parent="1" source="c1" target="g1" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" value="pairing lookup" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#5F6368;" parent="1" source="g1" target="s1" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" value="approve + issue" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#5F6368;" parent="1" source="s1" target="g2" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" value="hello-ok" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#5F6368;" parent="1" source="g2" target="c2" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" value="dedupe" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#5F6368;" parent="1" source="g3" target="s2" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" value="audit" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#5F6368;" parent="1" source="g4" target="s3" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

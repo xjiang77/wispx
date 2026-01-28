@@ -1,0 +1,71 @@
+<mxfile host="65bd71144e">
+  <diagram id="ai-tool-loop" name="AI Tool Loop">
+    <mxGraphModel dx="828" dy="347" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="AI ↔ Tools Interaction Loop (8 steps + hooks)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=24;fontColor=#202124;sketch=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="20" width="840" height="44" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="user" value="User" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=3;fillColor=#FEEFC3;strokeColor=#E37400;fontColor=#5D4200;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="90" y="140" width="120" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="agent" value="Agent Runtime" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#C6DAFC;strokeColor=#1A73E8;fontColor=#0D47A1;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="280" y="120" width="420" height="420" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="llm" value="1) LLM analyzes intent&#xa;2) emits tool request" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#F1F3F4;strokeColor=#5F6368;fontColor=#202124;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="320" y="170" width="340" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="pre" value="3) intercept & parse&#xa;4) PreToolUse (policy/approval)" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#FAD2CF;strokeColor=#C5221F;fontColor=#7F0000;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="320" y="280" width="340" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="post" value="6) PostToolUse (log/errors)&#xa;7) return result to LLM" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#CEEAD6;strokeColor=#188038;fontColor=#0B5323;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="320" y="390" width="340" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="tools" value="Tools" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#DADCE0;strokeColor=#5F6368;fontColor=#202124;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="780" y="160" width="720" height="380" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="t_file" value="File ops" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#FEEFC3;strokeColor=#E37400;fontColor=#5D4200;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="820" y="220" width="180" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="t_browser" value="Browser" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#C6DAFC;strokeColor=#1A73E8;fontColor=#0D47A1;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1025" y="220" width="180" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="t_bash" value="Bash / Code Exec" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#FAD2CF;strokeColor=#C5221F;fontColor=#7F0000;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1230" y="220" width="220" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="t_mcp" value="MCP Tools" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#CEEAD6;strokeColor=#188038;fontColor=#0B5323;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="820" y="320" width="180" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="t_skills" value="Skills (workflows)" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#DADCE0;strokeColor=#5F6368;fontColor=#202124;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1025" y="320" width="425" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" value="message" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#5F6368;" parent="1" source="user" target="llm" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="tool request" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#5F6368;" parent="1" source="llm" target="pre" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="execute" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#5F6368;" parent="1" source="pre" target="tools" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="result" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#5F6368;" parent="1" source="tools" target="post" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" value="final reply" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#5F6368;" parent="1" source="post" target="user" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

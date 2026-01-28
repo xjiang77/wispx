@@ -1,0 +1,168 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    
+    <!-- Title -->
+    <mxCell id="title" value="Clawdbot 组件依赖关系图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+      <mxGeometry x="250" y="10" width="300" height="30" as="geometry"/>
+    </mxCell>
+    
+    <!-- Top Row: Channel Plugins -->
+    <mxCell id="channel-plugins" value="Channel Plugins&#xa;(Telegram / Discord / Slack / ...)" style="rounded=1;fillColor=#FFF4E6;strokeColor=#FF8C42;fontStyle=1;fontSize=11" vertex="1" parent="1">
+      <mxGeometry x="280" y="50" width="240" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- Second Row: Config + Routing + Command Queue -->
+    <mxCell id="config-system" value="Config System&#xa;loadConfig()&#xa;hotReload()" style="rounded=1;fillColor=#E8F5E9;strokeColor=#66BB6A;fontSize=9;align=center" vertex="1" parent="1">
+      <mxGeometry x="40" y="140" width="140" height="60" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="routing-layer" value="Routing Layer&#xa;resolveAgentRoute&#xa;generateSessionKey" style="rounded=1;fillColor=#F0F9FF;strokeColor=#7FB3E0;fontSize=9;align=center" vertex="1" parent="1">
+      <mxGeometry x="330" y="140" width="140" height="60" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="command-queue" value="Command Queue&#xa;enqueueInLane()&#xa;Main/Cron/Subagent" style="rounded=1;fillColor=#E8F5E9;strokeColor=#66BB6A;fontSize=9;align=center" vertex="1" parent="1">
+      <mxGeometry x="620" y="140" width="140" height="60" as="geometry"/>
+    </mxCell>
+    
+    <!-- Arrows: Channel → Routing, Routing → Queue, Config → Routing -->
+    <mxCell id="edge-ch-route" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#666666;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="channel-plugins" target="routing-layer">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge-route-queue" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#666666;exitX=1;exitY=0.5;entryX=0;entryY=0.5" edge="1" parent="1" source="routing-layer" target="command-queue">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge-config-route" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#666666;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashed=1" edge="1" parent="1" source="config-system" target="routing-layer">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- Edge labels -->
+    <mxCell id="label-uses" value="uses" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666" vertex="1" parent="1">
+      <mxGeometry x="380" y="105" width="40" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="label-enqueues" value="enqueues" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666" vertex="1" parent="1">
+      <mxGeometry x="510" y="150" width="60" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="label-reads" value="reads" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666" vertex="1" parent="1">
+      <mxGeometry x="220" y="150" width="40" height="20" as="geometry"/>
+    </mxCell>
+    
+    <!-- Agent Runtime Container -->
+    <mxCell id="agent-runtime" value="Agent Runtime" style="rounded=1;fillColor=#E8F4FD;strokeColor=#5B9BD5;fontStyle=1;fontSize=12;verticalAlign=top;spacingTop=5" vertex="1" parent="1">
+      <mxGeometry x="40" y="240" width="720" height="200" as="geometry"/>
+    </mxCell>
+    
+    <!-- runEmbeddedPiAgent box -->
+    <mxCell id="run-embedded" value="runEmbeddedPiAgent()" style="rounded=1;fillColor=#FFFFFF;strokeColor=#5B9BD5;fontStyle=1;fontSize=10;verticalAlign=top;spacingTop=3" vertex="1" parent="1">
+      <mxGeometry x="60" y="270" width="680" height="80" as="geometry"/>
+    </mxCell>
+    
+    <!-- Agent Runtime sub-components -->
+    <mxCell id="auth-profiles" value="Auth Profiles&#xa;getApiKey()&#xa;markFailure()&#xa;calculateCD()" style="rounded=1;fillColor=#D6EAF8;strokeColor=#5B9BD5;fontSize=8;align=center" vertex="1" parent="1">
+      <mxGeometry x="80" y="295" width="100" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="session-mgr" value="Session Manager&#xa;acquireLock()&#xa;loadHistory()&#xa;persist()" style="rounded=1;fillColor=#D6EAF8;strokeColor=#5B9BD5;fontSize=8;align=center" vertex="1" parent="1">
+      <mxGeometry x="200" y="295" width="100" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="tool-system" value="Tool System&#xa;createTools()&#xa;policyFilter()&#xa;executeTools()" style="rounded=1;fillColor=#D6EAF8;strokeColor=#5B9BD5;fontSize=8;align=center" vertex="1" parent="1">
+      <mxGeometry x="320" y="295" width="100" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="stream-handler" value="Stream Handler&#xa;subscribe()&#xa;eventHandler()&#xa;blockChunk()" style="rounded=1;fillColor=#D6EAF8;strokeColor=#5B9BD5;fontSize=8;align=center" vertex="1" parent="1">
+      <mxGeometry x="440" y="295" width="100" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- Arrows between sub-components -->
+    <mxCell id="sub-edge1" style="endArrow=classic;strokeColor=#5B9BD5;exitX=1;exitY=0.5;entryX=0;entryY=0.5" edge="1" parent="1" source="auth-profiles" target="session-mgr">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="sub-edge2" style="endArrow=classic;strokeColor=#5B9BD5;exitX=1;exitY=0.5;entryX=0;entryY=0.5" edge="1" parent="1" source="session-mgr" target="tool-system">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="sub-edge3" style="endArrow=classic;strokeColor=#5B9BD5;exitX=1;exitY=0.5;entryX=0;entryY=0.5" edge="1" parent="1" source="tool-system" target="stream-handler">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- Shared Dependencies Box -->
+    <mxCell id="shared-deps" value="Shared Dependencies" style="rounded=1;fillColor=#FAFAFA;strokeColor=#BDBDBD;fontStyle=1;fontSize=10;verticalAlign=top;spacingTop=3" vertex="1" parent="1">
+      <mxGeometry x="60" y="365" width="680" height="65" as="geometry"/>
+    </mxCell>
+    <mxCell id="pi-ai" value="pi-ai lib&#xa;(LLM calls)" style="rounded=1;fillColor=#FFFFFF;strokeColor=#BDBDBD;fontSize=8;align=center" vertex="1" parent="1">
+      <mxGeometry x="80" y="385" width="80" height="35" as="geometry"/>
+    </mxCell>
+    <mxCell id="file-system" value="File System&#xa;(JSONL I/O)" style="rounded=1;fillColor=#FFFFFF;strokeColor=#BDBDBD;fontSize=8;align=center" vertex="1" parent="1">
+      <mxGeometry x="180" y="385" width="80" height="35" as="geometry"/>
+    </mxCell>
+    <mxCell id="process-mgr" value="Process Mgr&#xa;(bash exec)" style="rounded=1;fillColor=#FFFFFF;strokeColor=#BDBDBD;fontSize=8;align=center" vertex="1" parent="1">
+      <mxGeometry x="280" y="385" width="80" height="35" as="geometry"/>
+    </mxCell>
+    <mxCell id="diagnostics" value="Diagnostics&#xa;(events)" style="rounded=1;fillColor=#FFFFFF;strokeColor=#BDBDBD;fontSize=8;align=center" vertex="1" parent="1">
+      <mxGeometry x="380" y="385" width="80" height="35" as="geometry"/>
+    </mxCell>
+    <mxCell id="subsystem-log" value="SubsystemLog&#xa;(logging)" style="rounded=1;fillColor=#FFFFFF;strokeColor=#BDBDBD;fontSize=8;align=center" vertex="1" parent="1">
+      <mxGeometry x="480" y="385" width="80" height="35" as="geometry"/>
+    </mxCell>
+    
+    <!-- Arrow from Queue to Agent Runtime -->
+    <mxCell id="edge-queue-runtime" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#666666;exitX=0.5;exitY=1;entryX=0.85;entryY=0" edge="1" parent="1" source="command-queue" target="agent-runtime">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="690" y="220"/>
+          <mxPoint x="652" y="220"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label-schedules" value="schedules" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666" vertex="1" parent="1">
+      <mxGeometry x="700" y="200" width="60" height="20" as="geometry"/>
+    </mxCell>
+    
+    <!-- Arrow from Config to Agent Runtime -->
+    <mxCell id="edge-config-runtime" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#666666;exitX=0.5;exitY=1;entryX=0.1;entryY=0;dashed=1" edge="1" parent="1" source="config-system" target="agent-runtime">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="110" y="220"/>
+          <mxPoint x="112" y="220"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label-configures" value="configures" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666" vertex="1" parent="1">
+      <mxGeometry x="40" y="200" width="60" height="20" as="geometry"/>
+    </mxCell>
+    
+    <!-- Bottom Row: Reply Dispatcher → Channel Send → External APIs -->
+    <mxCell id="reply-dispatcher" value="Reply Dispatcher&#xa;buildPayloads()&#xa;chunkMessages()" style="rounded=1;fillColor=#E8F4FD;strokeColor=#5B9BD5;fontSize=9;align=center" vertex="1" parent="1">
+      <mxGeometry x="40" y="470" width="140" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="channel-send" value="Channel Send&#xa;deliverReplies()&#xa;chunkForChannel()" style="rounded=1;fillColor=#FFF4E6;strokeColor=#FF8C42;fontSize=9;align=center" vertex="1" parent="1">
+      <mxGeometry x="330" y="470" width="140" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="external-apis" value="External APIs&#xa;Telegram Bot API&#xa;Discord API / Slack API" style="rounded=1;fillColor=#F3E5F5;strokeColor=#AB47BC;fontSize=9;align=center" vertex="1" parent="1">
+      <mxGeometry x="620" y="470" width="140" height="60" as="geometry"/>
+    </mxCell>
+    
+    <!-- Arrow from Agent Runtime to Reply Dispatcher -->
+    <mxCell id="edge-runtime-reply" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#666666;exitX=0.15;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="agent-runtime" target="reply-dispatcher">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="label-returns" value="returns" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666" vertex="1" parent="1">
+      <mxGeometry x="80" y="445" width="40" height="20" as="geometry"/>
+    </mxCell>
+    
+    <!-- Arrow from Reply Dispatcher to Channel Send -->
+    <mxCell id="edge-reply-send" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#666666;exitX=1;exitY=0.5;entryX=0;entryY=0.5" edge="1" parent="1" source="reply-dispatcher" target="channel-send">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="label-sends" value="sends" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666" vertex="1" parent="1">
+      <mxGeometry x="230" y="480" width="40" height="20" as="geometry"/>
+    </mxCell>
+    
+    <!-- Arrow from Channel Send to External APIs -->
+    <mxCell id="edge-send-external" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#666666;exitX=1;exitY=0.5;entryX=0;entryY=0.5" edge="1" parent="1" source="channel-send" target="external-apis">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="label-calls" value="calls" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666" vertex="1" parent="1">
+      <mxGeometry x="520" y="480" width="40" height="20" as="geometry"/>
+    </mxCell>
+    
+  </root>
+</mxGraphModel>

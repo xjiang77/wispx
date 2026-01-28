@@ -1,0 +1,393 @@
+<mxGraphModel dx="1200" dy="800" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1400" math="0" shadow="0">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    
+    <!-- Title -->
+    <mxCell id="title" value="Agents Layer 详细架构图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;fontColor=#7F0000;sketch=1;" parent="1" vertex="1">
+      <mxGeometry x="500" y="20" width="500" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- Tool System Section -->
+    <mxCell id="tool-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=3;fillColor=#C6DAFC;strokeColor=#1A73E8;opacity=50;" parent="1" vertex="1">
+      <mxGeometry x="40" y="80" width="740" height="400" as="geometry"/>
+    </mxCell>
+    <mxCell id="tool-title" value="Tool System (工具系统)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;fontColor=#0D47A1;sketch=1;" parent="1" vertex="1">
+      <mxGeometry x="60" y="90" width="300" height="30" as="geometry"/>
+    </mxCell>
+    
+    <!-- Tool Registration -->
+    <mxCell id="tool-reg-box" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#A8C7FA;strokeColor=#1A73E8;" parent="1" vertex="1">
+      <mxGeometry x="60" y="130" width="300" height="150" as="geometry"/>
+    </mxCell>
+    <mxCell id="tool-reg-title" value="Tool Registration (工具注册)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#0D47A1;" parent="1" vertex="1">
+      <mxGeometry x="60" y="135" width="300" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="create-tools" value="createClawdbotCodingTools()" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=11;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="80" y="165" width="180" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="builtin-tools" value="Built-in Tools&#xa;exec, read, write, edit" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#A8C7FA;strokeColor=#1A73E8;fontColor=#0D47A1;" parent="1" vertex="1">
+      <mxGeometry x="80" y="200" width="120" height="35" as="geometry"/>
+    </mxCell>
+    <mxCell id="channel-tools" value="Channel Tools&#xa;message, telegram_*" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#A8C7FA;strokeColor=#1A73E8;fontColor=#0D47A1;" parent="1" vertex="1">
+      <mxGeometry x="210" y="200" width="120" height="35" as="geometry"/>
+    </mxCell>
+    <mxCell id="custom-tools" value="Custom Tools (plugins)" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#A8C7FA;strokeColor=#1A73E8;fontColor=#0D47A1;" parent="1" vertex="1">
+      <mxGeometry x="80" y="240" width="250" height="30" as="geometry"/>
+    </mxCell>
+    
+    <!-- Tool Policy Pipeline -->
+    <mxCell id="policy-box" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#A8C7FA;strokeColor=#1A73E8;" parent="1" vertex="1">
+      <mxGeometry x="60" y="300" width="700" height="80" as="geometry"/>
+    </mxCell>
+    <mxCell id="policy-title" value="Tool Policy Pipeline (策略过滤链)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#0D47A1;" parent="1" vertex="1">
+      <mxGeometry x="70" y="305" width="250" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="p1" value="profile&#xa;Policy" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="80" y="330" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="p2" value="provider&#xa;Policy" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="170" y="330" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="p3" value="global&#xa;Policy" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="260" y="330" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="p4" value="agent&#xa;Policy" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="350" y="330" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="p5" value="group&#xa;Policy" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="440" y="330" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="p6" value="sandbox&#xa;Policy" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="530" y="330" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="p7" value="subagent&#xa;Policy" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="620" y="330" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <!-- Policy arrows -->
+    <mxCell id="pa1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#1A73E8;endArrow=classic;" parent="1" source="p1" target="p2" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="pa2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#1A73E8;endArrow=classic;" parent="1" source="p2" target="p3" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="pa3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#1A73E8;endArrow=classic;" parent="1" source="p3" target="p4" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="pa4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#1A73E8;endArrow=classic;" parent="1" source="p4" target="p5" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="pa5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#1A73E8;endArrow=classic;" parent="1" source="p5" target="p6" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="pa6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#1A73E8;endArrow=classic;" parent="1" source="p6" target="p7" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="p-output" value="Tool[]" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=11;fillColor=#1A73E8;strokeColor=#0D47A1;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="710" y="335" width="50" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="pa7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#1A73E8;endArrow=classic;" parent="1" source="p7" target="p-output" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- Bash Execution -->
+    <mxCell id="bash-box" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#A8C7FA;strokeColor=#1A73E8;" parent="1" vertex="1">
+      <mxGeometry x="380" y="130" width="380" height="150" as="geometry"/>
+    </mxCell>
+    <mxCell id="bash-title" value="Bash Execution Pipeline" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#0D47A1;" parent="1" vertex="1">
+      <mxGeometry x="380" y="135" width="380" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="b1" value="Security&#xa;Check" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="400" y="170" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="b2" value="Env&#xa;Setup" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="490" y="170" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="b3" value="Spawn&#xa;Process" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="580" y="170" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="b4" value="Result&#xa;Process" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="670" y="170" width="70" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="ba1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#1A73E8;endArrow=classic;" parent="1" source="b1" target="b2" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="ba2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#1A73E8;endArrow=classic;" parent="1" source="b2" target="b3" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="ba3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#1A73E8;endArrow=classic;" parent="1" source="b3" target="b4" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="dedup" value="Messaging Dedup&#xa;归一化比较&#xa;避免重复发送" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#A8C7FA;strokeColor=#1A73E8;fontColor=#0D47A1;" parent="1" vertex="1">
+      <mxGeometry x="400" y="225" width="340" height="45" as="geometry"/>
+    </mxCell>
+    
+    <!-- Streaming Event Section -->
+    <mxCell id="stream-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=3;fillColor=#FEEFC3;strokeColor=#E37400;opacity=50;" parent="1" vertex="1">
+      <mxGeometry x="800" y="80" width="760" height="400" as="geometry"/>
+    </mxCell>
+    <mxCell id="stream-title" value="Streaming Event Handler (流式事件处理)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;fontColor=#5D4200;sketch=1;" parent="1" vertex="1">
+      <mxGeometry x="820" y="90" width="450" height="30" as="geometry"/>
+    </mxCell>
+    
+    <!-- State Structure -->
+    <mxCell id="state-box" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#FDE293;strokeColor=#E37400;" parent="1" vertex="1">
+      <mxGeometry x="820" y="130" width="320" height="180" as="geometry"/>
+    </mxCell>
+    <mxCell id="state-title" value="EmbeddedPiSubscribeState" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="820" y="135" width="320" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="state-fields" value="assistantTexts: []         累积文本块&#xa;toolMetas: []              工具调用元数据&#xa;blockBuffer: &quot;&quot;            待发送块缓冲&#xa;blockState: {&#xa;  thinking: boolean        &lt;think&gt; 状态&#xa;  final: boolean           &lt;final&gt; 状态&#xa;  inlineCode: {...}        代码块跨度&#xa;}&#xa;compactionInFlight: bool   压缩操作中&#xa;messagingToolSentTexts: [] 已发送追踪" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=10;fontColor=#5D4200;fontFamily=monospace;" parent="1" vertex="1">
+      <mxGeometry x="830" y="165" width="300" height="140" as="geometry"/>
+    </mxCell>
+    
+    <!-- Event Flow -->
+    <mxCell id="event-flow-box" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#FDE293;strokeColor=#E37400;" parent="1" vertex="1">
+      <mxGeometry x="820" y="330" width="720" height="140" as="geometry"/>
+    </mxCell>
+    <mxCell id="event-flow-title" value="Event Flow (事件流转)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="830" y="335" width="200" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="e1" value="agent&#xa;_start" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=9;fillColor=#FBBC05;strokeColor=#E37400;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="840" y="360" width="60" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="e2" value="message&#xa;_start" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=9;fillColor=#FBBC05;strokeColor=#E37400;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="920" y="360" width="60" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="e3" value="message&#xa;_update" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=9;fillColor=#FBBC05;strokeColor=#E37400;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="1000" y="360" width="60" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="e4" value="message&#xa;_end" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=9;fillColor=#FBBC05;strokeColor=#E37400;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="1080" y="360" width="60" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="e5" value="tool_exec&#xa;_start" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=9;fillColor=#FBBC05;strokeColor=#E37400;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="1160" y="360" width="60" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="e6" value="tool_exec&#xa;_end" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=9;fillColor=#FBBC05;strokeColor=#E37400;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="1240" y="360" width="60" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="e7" value="agent&#xa;_end" style="ellipse;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=9;fillColor=#FBBC05;strokeColor=#E37400;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="1320" y="360" width="60" height="45" as="geometry"/>
+    </mxCell>
+    <!-- Event arrows -->
+    <mxCell id="ea1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#E37400;endArrow=classic;" parent="1" source="e1" target="e2" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="ea2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#E37400;endArrow=classic;" parent="1" source="e2" target="e3" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="ea3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#E37400;endArrow=classic;" parent="1" source="e3" target="e4" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="ea4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#E37400;endArrow=classic;" parent="1" source="e4" target="e5" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="ea5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#E37400;endArrow=classic;" parent="1" source="e5" target="e6" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="ea6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#E37400;endArrow=classic;" parent="1" source="e6" target="e7" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- Loop arrow for message_update -->
+    <mxCell id="loop-arrow" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#E37400;endArrow=classic;curved=1;" parent="1" edge="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1030" y="410" as="sourcePoint"/>
+        <mxPoint x="1030" y="410" as="targetPoint"/>
+        <Array as="points">
+          <mxPoint x="1030" y="430"/>
+          <mxPoint x="1060" y="430"/>
+          <mxPoint x="1060" y="410"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="loop-label" value="循环" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=9;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="1010" y="430" width="40" height="20" as="geometry"/>
+    </mxCell>
+    
+    <!-- Delta types -->
+    <mxCell id="delta-box" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#FDE293;strokeColor=#E37400;" parent="1" vertex="1">
+      <mxGeometry x="1160" y="130" width="380" height="180" as="geometry"/>
+    </mxCell>
+    <mxCell id="delta-title" value="Delta Processing (增量处理)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="1160" y="135" width="380" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="text-delta" value="text_delta&#xa;文本累积" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=11;fillColor=#FBBC05;strokeColor=#E37400;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="1180" y="170" width="100" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="tool-delta" value="tool_use_delta&#xa;工具参数" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=11;fillColor=#FBBC05;strokeColor=#E37400;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="1300" y="170" width="100" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="think-filter" value="&lt;think&gt; 过滤&#xa;推理内容隐藏" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=11;fillColor=#FBBC05;strokeColor=#E37400;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="1420" y="170" width="100" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="block-chunk" value="Block Chunking (分块发送)&#xa;sentence / paragraph / text_end" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=11;fillColor=#FBBC05;strokeColor=#E37400;fontColor=#5D4200;" parent="1" vertex="1">
+      <mxGeometry x="1180" y="235" width="340" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- Auth Profiles Section -->
+    <mxCell id="auth-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=3;fillColor=#FAD2CF;strokeColor=#C5221F;opacity=50;" parent="1" vertex="1">
+      <mxGeometry x="40" y="500" width="760" height="400" as="geometry"/>
+    </mxCell>
+    <mxCell id="auth-title" value="Auth Profile Rotation (认证轮换)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;fontColor=#7F0000;sketch=1;" parent="1" vertex="1">
+      <mxGeometry x="60" y="510" width="400" height="30" as="geometry"/>
+    </mxCell>
+    
+    <!-- Profile Store -->
+    <mxCell id="profile-store" value="" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontSize=12;fontStyle=1;fillColor=#F28B82;strokeColor=#C5221F;" parent="1" vertex="1">
+      <mxGeometry x="60" y="550" width="320" height="160" as="geometry"/>
+    </mxCell>
+    <mxCell id="profile-store-title" value="~/.clawdbot/credentials/&lt;provider&gt;.json" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=12;fontColor=#7F0000;" parent="1" vertex="1">
+      <mxGeometry x="60" y="555" width="320" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="profile-content" value="profiles: [&#xa;  { id, type: &quot;api_key&quot;|&quot;token&quot;|&quot;oauth&quot;, key/token }&#xa;]&#xa;usage: {&#xa;  &quot;&lt;profileId&gt;&quot;: {&#xa;    lastUsed, cooldownUntil, disabledUntil,&#xa;    errorCount, failureCounts: { auth, rate_limit }&#xa;  }&#xa;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=10;fontColor=#7F0000;fontFamily=monospace;" parent="1" vertex="1">
+      <mxGeometry x="70" y="580" width="300" height="120" as="geometry"/>
+    </mxCell>
+    
+    <!-- Rotation Algorithm -->
+    <mxCell id="rotation-box" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#F28B82;strokeColor=#C5221F;" parent="1" vertex="1">
+      <mxGeometry x="400" y="550" width="380" height="160" as="geometry"/>
+    </mxCell>
+    <mxCell id="rotation-title" value="Rotation Algorithm (轮换算法)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#7F0000;" parent="1" vertex="1">
+      <mxGeometry x="400" y="555" width="380" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="r1" value="1. Filter&#xa;有效 profiles" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#EA4335;strokeColor=#C5221F;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="420" y="590" width="80" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="r2" value="2. Sort&#xa;优先级排序" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#EA4335;strokeColor=#C5221F;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="520" y="590" width="80" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="r3" value="3. Try&#xa;执行请求" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#EA4335;strokeColor=#C5221F;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="620" y="590" width="80" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="r4" value="4. Failover&#xa;切换模型" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#EA4335;strokeColor=#C5221F;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="720" y="590" width="80" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="ra1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#C5221F;endArrow=classic;" parent="1" source="r1" target="r2" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="ra2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#C5221F;endArrow=classic;" parent="1" source="r2" target="r3" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="ra3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#C5221F;endArrow=classic;dashed=1;" parent="1" source="r3" target="r4" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="priority-note" value="优先级: user指定 &gt; agent配置 &gt; lastGood &gt; lastUsed" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=10;fontColor=#7F0000;" parent="1" vertex="1">
+      <mxGeometry x="420" y="645" width="350" height="20" as="geometry"/>
+    </mxCell>
+    
+    <!-- Cooldown Calculation -->
+    <mxCell id="cooldown-box" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#F28B82;strokeColor=#C5221F;" parent="1" vertex="1">
+      <mxGeometry x="60" y="730" width="720" height="150" as="geometry"/>
+    </mxCell>
+    <mxCell id="cooldown-title" value="Cooldown Calculation (冷却计算)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#7F0000;" parent="1" vertex="1">
+      <mxGeometry x="70" y="735" width="300" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="cooldown-formula" value="calculateCooldownMs(errorCount)&#xa;= min(1h, 60s × 5^(errorCount-1))&#xa;&#xa;60s → 5min → 25min → 1h (指数退避)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=11;fontColor=#7F0000;fontFamily=monospace;" parent="1" vertex="1">
+      <mxGeometry x="80" y="765" width="300" height="80" as="geometry"/>
+    </mxCell>
+    <mxCell id="failure-cats" value="Failure Categories (失败分类)&#xa;&#xa;• auth          认证失败&#xa;• rate_limit    速率限制&#xa;• billing       账单问题&#xa;• timeout       超时&#xa;• context_overflow  上下文溢出" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=10;fontColor=#7F0000;" parent="1" vertex="1">
+      <mxGeometry x="400" y="765" width="200" height="110" as="geometry"/>
+    </mxCell>
+    <mxCell id="failover-note" value="全部失败时:&#xa;FailoverError&#xa;→ 切换 fallback 模型" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#EA4335;strokeColor=#C5221F;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="620" y="770" width="140" height="60" as="geometry"/>
+    </mxCell>
+    
+    <!-- Session Management Section -->
+    <mxCell id="session-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=3;fillColor=#CEEAD6;strokeColor=#188038;opacity=50;" parent="1" vertex="1">
+      <mxGeometry x="820" y="500" width="720" height="400" as="geometry"/>
+    </mxCell>
+    <mxCell id="session-title" value="Session Management (会话管理)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;fontColor=#0B5323;sketch=1;" parent="1" vertex="1">
+      <mxGeometry x="840" y="510" width="400" height="30" as="geometry"/>
+    </mxCell>
+    
+    <!-- Session File Structure -->
+    <mxCell id="session-file" value="" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontSize=12;fontStyle=1;fillColor=#A8DAB5;strokeColor=#188038;" parent="1" vertex="1">
+      <mxGeometry x="840" y="550" width="320" height="160" as="geometry"/>
+    </mxCell>
+    <mxCell id="session-file-title" value="~/.clawdbot/agents/&lt;id&gt;/sessions/&lt;key&gt;.jsonl" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#0B5323;" parent="1" vertex="1">
+      <mxGeometry x="840" y="555" width="320" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="session-content" value="Line 1: { type: &quot;session&quot;, id, cwd }&#xa;Line 2: { type: &quot;message&quot;, role: &quot;user&quot; }&#xa;Line 3: { type: &quot;message&quot;, role: &quot;assistant&quot; }&#xa;...&#xa;Line N: { type: &quot;compaction&quot;, summary, keepFrom }" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=10;fontColor=#0B5323;fontFamily=monospace;" parent="1" vertex="1">
+      <mxGeometry x="850" y="580" width="300" height="100" as="geometry"/>
+    </mxCell>
+    
+    <!-- Write Lock -->
+    <mxCell id="lock-box" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#A8DAB5;strokeColor=#188038;" parent="1" vertex="1">
+      <mxGeometry x="1180" y="550" width="340" height="160" as="geometry"/>
+    </mxCell>
+    <mxCell id="lock-title" value="Write Lock (写锁机制)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#0B5323;" parent="1" vertex="1">
+      <mxGeometry x="1180" y="555" width="340" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="lock-file" value="&lt;session&gt;.jsonl.lock&#xa;{ pid, createdAt }" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#34A853;strokeColor=#188038;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="1200" y="590" width="140" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="lock-ops" value="acquire: exclusive → wait/retry (10s)&#xa;         → stale check (30m)&#xa;release: decrement → delete lock" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=10;fontColor=#0B5323;fontFamily=monospace;" parent="1" vertex="1">
+      <mxGeometry x="1200" y="645" width="300" height="55" as="geometry"/>
+    </mxCell>
+    
+    <!-- Compaction -->
+    <mxCell id="compact-box" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#A8DAB5;strokeColor=#188038;" parent="1" vertex="1">
+      <mxGeometry x="840" y="730" width="680" height="150" as="geometry"/>
+    </mxCell>
+    <mxCell id="compact-title" value="Compaction (压缩)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#0B5323;" parent="1" vertex="1">
+      <mxGeometry x="850" y="735" width="200" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="c1" value="splitMessages&#xa;ByTokenShare()" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#34A853;strokeColor=#188038;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="870" y="770" width="110" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="c2" value="summarize&#xa;InStages()" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#34A853;strokeColor=#188038;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="1000" y="770" width="110" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="c3" value="mergePartial&#xa;Summaries()" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#34A853;strokeColor=#188038;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="1130" y="770" width="110" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="c4" value="+ toolFailures&#xa;+ fileOperations" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fontStyle=1;fontSize=10;fillColor=#34A853;strokeColor=#188038;fontColor=#FFFFFF;" parent="1" vertex="1">
+      <mxGeometry x="1260" y="770" width="110" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="ca1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#188038;endArrow=classic;" parent="1" source="c1" target="c2" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="ca2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#188038;endArrow=classic;" parent="1" source="c2" target="c3" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="ca3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=2;strokeColor=#188038;endArrow=classic;" parent="1" source="c3" target="c4" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="history-limit" value="History Limiting&#xa;DM 会话可配置保留最近 N 轮对话" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=10;fontColor=#0B5323;" parent="1" vertex="1">
+      <mxGeometry x="870" y="830" width="250" height="40" as="geometry"/>
+    </mxCell>
+    
+    <!-- Legend -->
+    <mxCell id="legend-box" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#5F6368;" parent="1" vertex="1">
+      <mxGeometry x="1400" y="20" width="140" height="130" as="geometry"/>
+    </mxCell>
+    <mxCell id="legend-title" value="图例 Legend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=12;fontColor=#202124;" parent="1" vertex="1">
+      <mxGeometry x="1400" y="25" width="140" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg1" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fillColor=#C6DAFC;strokeColor=#1A73E8;strokeWidth=2;" parent="1" vertex="1">
+      <mxGeometry x="1410" y="50" width="20" height="15" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg1-text" value="Tool System" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#202124;" parent="1" vertex="1">
+      <mxGeometry x="1435" y="47" width="90" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg2" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fillColor=#FEEFC3;strokeColor=#E37400;strokeWidth=2;" parent="1" vertex="1">
+      <mxGeometry x="1410" y="72" width="20" height="15" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg2-text" value="Streaming" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#202124;" parent="1" vertex="1">
+      <mxGeometry x="1435" y="69" width="90" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg3" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fillColor=#FAD2CF;strokeColor=#C5221F;strokeWidth=2;" parent="1" vertex="1">
+      <mxGeometry x="1410" y="94" width="20" height="15" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg3-text" value="Auth Profiles" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#202124;" parent="1" vertex="1">
+      <mxGeometry x="1435" y="91" width="90" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg4" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fillColor=#CEEAD6;strokeColor=#188038;strokeWidth=2;" parent="1" vertex="1">
+      <mxGeometry x="1410" y="116" width="20" height="15" as="geometry"/>
+    </mxCell>
+    <mxCell id="leg4-text" value="Session Mgr" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#202124;" parent="1" vertex="1">
+      <mxGeometry x="1435" y="113" width="90" height="20" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>
