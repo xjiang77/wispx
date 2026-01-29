@@ -1,0 +1,72 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <!-- Level 1: Features -->
+    <mxCell id="level1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="80" width="200" height="160" as="geometry"/>
+    </mxCell>
+    <mxCell id="level1_title" value="Level 1: Features" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1C1C1C;fontFamily=Courier New;" vertex="1" parent="1">
+      <mxGeometry x="50" y="90" width="180" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="level1_type" value="Stateless" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="50" y="115" width="180" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="level1_desc" value="One-shot tasks.&#xa;Classification, Summarization." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="50" y="135" width="180" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="level1_prompt" value="&quot;Label this email as Spam.&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#DDDDDD;fontSize=10;fontColor=#666666;fontFamily=Courier New;align=left;spacingLeft=5;" vertex="1" parent="1">
+      <mxGeometry x="50" y="185" width="180" height="35" as="geometry"/>
+    </mxCell>
+    <!-- Arrow 1 -->
+    <mxCell id="arrow1" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="250" y="160" as="sourcePoint"/>
+        <mxPoint x="290" y="160" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Level 2: Workflows -->
+    <mxCell id="level2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="300" y="80" width="200" height="160" as="geometry"/>
+    </mxCell>
+    <mxCell id="level2_title" value="Level 2: Workflows" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1C1C1C;fontFamily=Courier New;" vertex="1" parent="1">
+      <mxGeometry x="310" y="90" width="180" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="level2_type" value="Deterministic" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="310" y="115" width="180" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="level2_desc" value="Structured loops, RAG,&#xa;rigid logic flows." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="310" y="135" width="180" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="level2_prompt" value="&quot;Suggest the next edit.&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#DDDDDD;fontSize=10;fontColor=#666666;fontFamily=Courier New;align=left;spacingLeft=5;" vertex="1" parent="1">
+      <mxGeometry x="310" y="185" width="180" height="35" as="geometry"/>
+    </mxCell>
+    <!-- Arrow 2 -->
+    <mxCell id="arrow2" value="" style="endArrow=classic;html=1;strokeColor=#C15937;strokeWidth=2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="510" y="160" as="sourcePoint"/>
+        <mxPoint x="550" y="160" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Level 3: Agents (highlighted) -->
+    <mxCell id="level3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C15937;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="560" y="80" width="200" height="160" as="geometry"/>
+    </mxCell>
+    <mxCell id="level3_title" value="Level 3: Agents" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#C15937;fontFamily=Courier New;" vertex="1" parent="1">
+      <mxGeometry x="570" y="90" width="180" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="level3_type" value="Autonomous" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#C15937;" vertex="1" parent="1">
+      <mxGeometry x="570" y="115" width="180" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="level3_desc" value="Context building, trajectory&#xa;decisions, long-running&#xa;(10-30 mins)." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="570" y="135" width="180" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="level3_prompt" value="&quot;Refactor this legacy module&#xa;and write tests.&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FDE8E4;strokeColor=#C15937;fontSize=10;fontColor=#C15937;fontFamily=Courier New;align=left;spacingLeft=5;" vertex="1" parent="1">
+      <mxGeometry x="570" y="185" width="180" height="40" as="geometry"/>
+    </mxCell>
+    <!-- Title -->
+    <mxCell id="title" value="图2: AI 集成的演进 - 从无状态特性到自主轨迹" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="240" y="270" width="320" height="30" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>

@@ -1,0 +1,71 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <!-- Subtitle -->
+    <mxCell id="subtitle" value="From CLI to Production SDK" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="280" y="30" width="240" height="25" as="geometry"/>
+    </mxCell>
+    <!-- Step 1: Start in Claude Code -->
+    <mxCell id="step1_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C15937;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="60" y="80" width="180" height="140" as="geometry"/>
+    </mxCell>
+    <mxCell id="step1_icon" value="&gt;_" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=36;fontStyle=1;fontColor=#C15937;fontFamily=Courier New;" vertex="1" parent="1">
+      <mxGeometry x="100" y="90" width="100" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="step1_title" value="Start in Claude Code." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="70" y="145" width="160" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="step1_desc" value="Prototype logic manually&#xa;in the terminal." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="70" y="170" width="160" height="40" as="geometry"/>
+    </mxCell>
+    <!-- Arrow 1 -->
+    <mxCell id="arrow1" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="250" y="150" as="sourcePoint"/>
+        <mxPoint x="300" y="150" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Step 2: Extract Patterns -->
+    <mxCell id="step2_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C15937;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="310" y="80" width="180" height="140" as="geometry"/>
+    </mxCell>
+    <mxCell id="step2_icon" value="[ ]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=36;fontStyle=1;fontColor=#C15937;" vertex="1" parent="1">
+      <mxGeometry x="350" y="90" width="100" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="step2_title" value="Extract Patterns" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="320" y="145" width="160" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="step2_desc" value="Save successful logic&#xa;(e.g., SQL patterns) as&#xa;reusable scripts or 'Skills'." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="320" y="170" width="160" height="50" as="geometry"/>
+    </mxCell>
+    <!-- Arrow 2 -->
+    <mxCell id="arrow2" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="500" y="150" as="sourcePoint"/>
+        <mxPoint x="550" y="150" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Step 3: Move to SDK -->
+    <mxCell id="step3_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C15937;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="560" y="80" width="180" height="140" as="geometry"/>
+    </mxCell>
+    <mxCell id="step3_icon" value="SDK" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontStyle=1;fontColor=#C15937;" vertex="1" parent="1">
+      <mxGeometry x="600" y="90" width="100" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="step3_title" value="Move to SDK" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="570" y="145" width="160" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="step3_desc" value="Wrap the proven logic in&#xa;the Agent SDK for&#xa;production." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="570" y="170" width="160" height="50" as="geometry"/>
+    </mxCell>
+    <!-- Quote -->
+    <mxCell id="quote" value="&quot;Simple is not Easy&quot;. The final agent code should be small;&#xa;the intelligence is in the prompt and file structure." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=3;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="160" y="260" width="480" height="40" as="geometry"/>
+    </mxCell>
+    <!-- Title -->
+    <mxCell id="title" value="图9: 原型工作流 - 从 CLI 到生产 SDK" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="260" y="320" width="280" height="30" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>

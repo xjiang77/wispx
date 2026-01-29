@@ -1,0 +1,102 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <!-- Transformation label -->
+    <mxCell id="trans_label" value="Transformation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="280" y="30" width="240" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="trans_line" value="" style="endArrow=none;html=1;strokeColor=#666666;strokeWidth=1;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="120" y="45" as="sourcePoint"/>
+        <mxPoint x="680" y="45" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Step 1: The Request -->
+    <mxCell id="step1_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="70" width="200" height="140" as="geometry"/>
+    </mxCell>
+    <mxCell id="step1_num" value="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#C15937;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="50" y="80" width="25" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="step1_title" value="The Request" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="80" y="80" width="150" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="step1_sub" value="(Natural Language)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="80" y="100" width="150" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="step1_task" value="Task: Build a competitive&#xa;Pokemon team around&#xa;Venusaur." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="50" y="130" width="180" height="60" as="geometry"/>
+    </mxCell>
+    <!-- Arrow 1 -->
+    <mxCell id="arrow1" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="250" y="140" as="sourcePoint"/>
+        <mxPoint x="290" y="140" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Step 2: The Agent Logic -->
+    <mxCell id="step2_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="300" y="70" width="200" height="140" as="geometry"/>
+    </mxCell>
+    <mxCell id="step2_num" value="2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#C15937;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="310" y="80" width="25" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="step2_title" value="The Agent Logic" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="340" y="80" width="150" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="step2_sub" value="(Code Generation)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="340" y="100" width="150" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="step2_python" value="Python" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#DDDDDD;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="320" y="130" width="60" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="step2_desc" value="Agent writes SDK to&#xa;query PokeAPI. It doesn't&#xa;guess stats; it fetches them." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="310" y="165" width="180" height="45" as="geometry"/>
+    </mxCell>
+    <!-- Arrow 2 -->
+    <mxCell id="arrow2" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="510" y="140" as="sourcePoint"/>
+        <mxPoint x="550" y="140" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Step 3: The Output -->
+    <mxCell id="step3_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="560" y="70" width="200" height="140" as="geometry"/>
+    </mxCell>
+    <mxCell id="step3_num" value="3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#C15937;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="570" y="80" width="25" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="step3_title" value="The Output" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="600" y="80" width="150" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="step3_sub" value="(Data-Driven)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="600" y="100" width="150" height="20" as="geometry"/>
+    </mxCell>
+    <!-- Chart representation -->
+    <mxCell id="chart1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C15937;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="590" y="145" width="30" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="chart2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C15937;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="630" y="155" width="30" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="chart_label" value="Venusaur &amp; Teammates" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="570" y="195" width="180" height="15" as="geometry"/>
+    </mxCell>
+    <!-- Generalizing section -->
+    <mxCell id="gen_title" value="Generalizing the Pattern:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="40" y="240" width="200" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="gen1" value="• Querying: Don't read 100 emails. Write a script to filter by sender and sum the price." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="40" y="265" width="720" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="gen2" value="• Data Trends: Don't spot the trend. Write Python to graph the data." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="40" y="285" width="720" height="20" as="geometry"/>
+    </mxCell>
+    <!-- Title -->
+    <mxCell id="title" value="图5: 策略 - 用代码生成解决非编码任务" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="260" y="330" width="280" height="30" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>

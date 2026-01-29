@@ -1,0 +1,70 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <!-- Sub-Agent A action label -->
+    <mxCell id="action_a" value="Action: Search Sheet 1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#C15937;fontFamily=Courier New;" vertex="1" parent="1">
+      <mxGeometry x="60" y="60" width="180" height="20" as="geometry"/>
+    </mxCell>
+    <!-- Sub-Agent A -->
+    <mxCell id="agent_a" value="Sub-Agent A" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;strokeWidth=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="80" y="100" width="140" height="60" as="geometry"/>
+    </mxCell>
+    <!-- Value found A -->
+    <mxCell id="value_a" value="Value Found: $400" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#C15937;fontFamily=Courier New;" vertex="1" parent="1">
+      <mxGeometry x="80" y="180" width="140" height="20" as="geometry"/>
+    </mxCell>
+    <!-- Manager Agent -->
+    <mxCell id="manager" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;strokeWidth=1;" vertex="1" parent="1">
+      <mxGeometry x="300" y="90" width="200" height="80" as="geometry"/>
+    </mxCell>
+    <mxCell id="manager_title" value="Manager Agent" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="300" y="100" width="200" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="manager_sub1" value="(Clean Context)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="300" y="125" width="200" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="manager_sub2" value="(Inter Regular)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+      <mxGeometry x="300" y="145" width="200" height="20" as="geometry"/>
+    </mxCell>
+    <!-- Sub-Agent B action label -->
+    <mxCell id="action_b" value="Action: Search Sheet 2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#C15937;fontFamily=Courier New;" vertex="1" parent="1">
+      <mxGeometry x="560" y="60" width="180" height="20" as="geometry"/>
+    </mxCell>
+    <!-- Sub-Agent B -->
+    <mxCell id="agent_b" value="Sub-Agent B" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;strokeWidth=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="580" y="100" width="140" height="60" as="geometry"/>
+    </mxCell>
+    <!-- Value found B -->
+    <mxCell id="value_b" value="Value Found: $200" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#C15937;fontFamily=Courier New;" vertex="1" parent="1">
+      <mxGeometry x="580" y="180" width="140" height="20" as="geometry"/>
+    </mxCell>
+    <!-- Bidirectional arrows -->
+    <mxCell id="arrow_left" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#666666;strokeWidth=1.5;curved=1;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="220" y="125" as="sourcePoint"/>
+        <mxPoint x="300" y="125" as="targetPoint"/>
+        <Array as="points">
+          <mxPoint x="260" y="100"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="arrow_right" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#666666;strokeWidth=1.5;curved=1;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="500" y="125" as="sourcePoint"/>
+        <mxPoint x="580" y="125" as="targetPoint"/>
+        <Array as="points">
+          <mxPoint x="540" y="100"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <!-- Explanation -->
+    <mxCell id="explain" value="Inter Regular: The sub-agents perform the messy work (reading thousands of rows).&#xa;The Manager only receives the clean final answer, preserving context hygiene." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="40" y="240" width="720" height="40" as="geometry"/>
+    </mxCell>
+    <!-- Title -->
+    <mxCell id="title" value="图7: 子 Agent 与并行化 - 扩展能力而不污染主上下文窗口" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="200" y="300" width="400" height="30" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>

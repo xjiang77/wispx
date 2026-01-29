@@ -1,0 +1,58 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <!-- Main message -->
+    <mxCell id="main_msg" value="If you can't verify it, do not build&#xa;an autonomous agent for it." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="40" y="60" width="300" height="60" as="geometry"/>
+    </mxCell>
+    <!-- Deterministic Box -->
+    <mxCell id="det_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C15937;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="400" y="40" width="340" height="100" as="geometry"/>
+    </mxCell>
+    <mxCell id="det_title" value="Deterministic" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="400" y="50" width="340" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="det_desc" value="Compilers, Linters, Type-checkers.&#xa;If code doesn't compile, the agent&#xa;knows it failed immediately." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="410" y="80" width="320" height="50" as="geometry"/>
+    </mxCell>
+    <!-- Arrow 1 -->
+    <mxCell id="arrow1" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="570" y="145" as="sourcePoint"/>
+        <mxPoint x="570" y="175" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Rule-Based Box -->
+    <mxCell id="rule_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2C3E50;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="400" y="180" width="340" height="100" as="geometry"/>
+    </mxCell>
+    <mxCell id="rule_title" value="Rule-Based" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="400" y="190" width="340" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="rule_desc" value="Heuristics.&#xa;&quot;If writing to file, check if file exists first.&quot;&#xa;&quot;If output is empty, retry.&quot;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="410" y="220" width="320" height="50" as="geometry"/>
+    </mxCell>
+    <!-- Arrow 2 -->
+    <mxCell id="arrow2" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="570" y="285" as="sourcePoint"/>
+        <mxPoint x="570" y="315" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Adversarial Box -->
+    <mxCell id="adv_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2C3E50;strokeWidth=2;" vertex="1" parent="1">
+      <mxGeometry x="400" y="320" width="340" height="100" as="geometry"/>
+    </mxCell>
+    <mxCell id="adv_title" value="Adversarial / Sub-Agents" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="400" y="330" width="340" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="adv_desc" value="Using a separate agent session to critique&#xa;the work of the first agent." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="410" y="360" width="320" height="40" as="geometry"/>
+    </mxCell>
+    <!-- Title -->
+    <mxCell id="title" value="图6: 关键步骤 - 验证层次" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="300" y="450" width="200" height="30" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>

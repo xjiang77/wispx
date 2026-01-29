@@ -1,0 +1,90 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <!-- Subtitle -->
+    <mxCell id="subtitle" value="Mitigating the Lethal Trifecta: Code Exec + File System + Exfiltration" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="160" y="30" width="480" height="25" as="geometry"/>
+    </mxCell>
+    <!-- Threat arrow -->
+    <mxCell id="threat_label" value="Threat" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="30" y="175" width="60" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="threat_arrow" value="" style="endArrow=classic;html=1;strokeColor=#1C1C1C;strokeWidth=4;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="90" y="187" as="sourcePoint"/>
+        <mxPoint x="750" y="187" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Layer 1: Model Layer -->
+    <mxCell id="layer1_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8E8E8;strokeColor=#C15937;strokeWidth=3;" vertex="1" parent="1">
+      <mxGeometry x="140" y="90" width="140" height="200" as="geometry"/>
+    </mxCell>
+    <!-- Holes in layer 1 -->
+    <mxCell id="hole1_1" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="160" y="120" width="20" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="hole1_2" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="200" y="180" width="15" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="hole1_3" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="170" y="230" width="18" height="28" as="geometry"/>
+    </mxCell>
+    <mxCell id="hole1_4" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="240" y="150" width="15" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="layer1_title" value="Model Layer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="140" y="300" width="140" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="layer1_desc" value="RLHF &amp; Alignment.&#xa;Refusal to do harm." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="140" y="320" width="140" height="35" as="geometry"/>
+    </mxCell>
+    <!-- Layer 2: Harness Layer -->
+    <mxCell id="layer2_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8E8E8;strokeColor=#C15937;strokeWidth=3;" vertex="1" parent="1">
+      <mxGeometry x="360" y="90" width="140" height="200" as="geometry"/>
+    </mxCell>
+    <!-- Holes in layer 2 -->
+    <mxCell id="hole2_1" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="400" y="140" width="18" height="28" as="geometry"/>
+    </mxCell>
+    <mxCell id="hole2_2" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="440" y="200" width="15" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="hole2_3" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="380" y="240" width="20" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="layer2_title" value="Harness Layer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="360" y="300" width="140" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="layer2_desc" value="Permissions &amp; Parsers.&#xa;Parsing Bash commands&#xa;before execution to block&#xa;dangerous flags." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="360" y="320" width="140" height="55" as="geometry"/>
+    </mxCell>
+    <!-- Layer 3: Sandbox Layer -->
+    <mxCell id="layer3_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8E8E8;strokeColor=#C15937;strokeWidth=3;" vertex="1" parent="1">
+      <mxGeometry x="580" y="90" width="140" height="200" as="geometry"/>
+    </mxCell>
+    <!-- Holes in layer 3 -->
+    <mxCell id="hole3_1" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="620" y="110" width="15" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="hole3_2" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="660" y="170" width="18" height="28" as="geometry"/>
+    </mxCell>
+    <mxCell id="hole3_3" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="600" y="220" width="20" height="32" as="geometry"/>
+    </mxCell>
+    <mxCell id="hole3_4" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="680" y="250" width="15" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="layer3_title" value="Sandbox Layer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#1C1C1C;" vertex="1" parent="1">
+      <mxGeometry x="580" y="300" width="140" height="20" as="geometry"/>
+    </mxCell>
+    <mxCell id="layer3_desc" value="Network Isolation &amp; Jails.&#xa;Docker/Cloudflare containers.&#xa;If compromised, agent is&#xa;trapped in disposable env&#xa;without prod secrets." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="580" y="320" width="140" height="70" as="geometry"/>
+    </mxCell>
+    <!-- Title -->
+    <mxCell id="title" value="图8: 安全性 - &quot;瑞士奶酪&quot;模型" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="280" y="410" width="240" height="30" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>

@@ -1,0 +1,80 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <!-- Agent Box (Top) -->
+    <mxCell id="agent" value="Agent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1C1C1C;strokeWidth=2;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+      <mxGeometry x="340" y="40" width="120" height="50" as="geometry"/>
+    </mxCell>
+    <!-- Context Box -->
+    <mxCell id="context" value="Context" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1C1C1C;strokeWidth=2;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="120" y="180" width="120" height="50" as="geometry"/>
+    </mxCell>
+    <!-- Bash Box -->
+    <mxCell id="bash" value="Bash" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1C1C1C;strokeWidth=2;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="340" y="180" width="120" height="50" as="geometry"/>
+    </mxCell>
+    <!-- Memory Box -->
+    <mxCell id="memory" value="Memory" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1C1C1C;strokeWidth=2;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="560" y="180" width="120" height="50" as="geometry"/>
+    </mxCell>
+    <!-- Vertical line from Agent -->
+    <mxCell id="line1" value="" style="endArrow=none;html=1;strokeColor=#1C1C1C;strokeWidth=1.5;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="400" y="90" as="sourcePoint"/>
+        <mxPoint x="400" y="130" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Horizontal line -->
+    <mxCell id="line2" value="" style="endArrow=none;html=1;strokeColor=#1C1C1C;strokeWidth=1.5;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="180" y="130" as="sourcePoint"/>
+        <mxPoint x="620" y="130" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Vertical line to Context -->
+    <mxCell id="line3" value="" style="endArrow=classic;html=1;strokeColor=#1C1C1C;strokeWidth=1.5;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="180" y="130" as="sourcePoint"/>
+        <mxPoint x="180" y="180" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Vertical line to Bash -->
+    <mxCell id="line4" value="" style="endArrow=classic;html=1;strokeColor=#1C1C1C;strokeWidth=1.5;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="400" y="130" as="sourcePoint"/>
+        <mxPoint x="400" y="180" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Vertical line to Memory -->
+    <mxCell id="line5" value="" style="endArrow=classic;html=1;strokeColor=#1C1C1C;strokeWidth=1.5;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="620" y="130" as="sourcePoint"/>
+        <mxPoint x="620" y="180" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Return arrows (small) -->
+    <mxCell id="ret1" value="" style="endArrow=classic;html=1;strokeColor=#1C1C1C;strokeWidth=1;dashed=1;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="160" y="230" as="sourcePoint"/>
+        <mxPoint x="160" y="280" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ret2" value="" style="endArrow=classic;html=1;strokeColor=#1C1C1C;strokeWidth=1;dashed=1;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="380" y="230" as="sourcePoint"/>
+        <mxPoint x="380" y="280" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ret3" value="" style="endArrow=classic;html=1;strokeColor=#1C1C1C;strokeWidth=1;dashed=1;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="600" y="230" as="sourcePoint"/>
+        <mxPoint x="600" y="280" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+    <!-- Title -->
+    <mxCell id="title" value="图1: Agent 核心架构" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="300" y="320" width="200" height="30" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>
