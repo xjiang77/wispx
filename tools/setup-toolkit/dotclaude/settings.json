@@ -1,0 +1,115 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "__HOME__/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "document-skills@anthropic-agent-skills": true,
+    "rust-analyzer-lsp@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": false
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git status *)",
+      "Bash(git log *)",
+      "Bash(git diff *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git checkout *)",
+      "Bash(git branch *)",
+      "Bash(git merge *)",
+      "Bash(git rebase *)",
+      "Bash(git stash *)",
+      "Bash(git fetch *)",
+      "Bash(git pull *)",
+      "Bash(git push)",
+      "Bash(git push origin *)",
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(npx prettier *)",
+      "Bash(npx eslint *)",
+      "Bash(npx jest *)",
+      "Bash(npx vitest *)",
+      "Bash(pnpm run *)",
+      "Bash(pnpm test *)",
+      "Bash(pnpm install *)",
+      "Bash(pnpm add *)",
+      "Bash(go build *)",
+      "Bash(go test *)",
+      "Bash(go run *)",
+      "Bash(go mod *)",
+      "Bash(cargo build *)",
+      "Bash(cargo test *)",
+      "Bash(cargo run *)",
+      "Bash(cargo clippy *)",
+      "Bash(make *)",
+      "Bash(pytest *)",
+      "Bash(python -m pytest *)",
+      "Bash(python *.py)",
+      "Bash(python -m *)",
+      "Bash(pip install *)",
+      "Bash(uv *)",
+      "Bash(tsc *)",
+      "Bash(node *)",
+      "Bash(deno *)",
+      "Bash(bun *)",
+      "Bash(gh *)",
+      "Bash(ls *)",
+      "Bash(which *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(wc *)",
+      "Bash(sort *)",
+      "Bash(mkdir *)",
+      "Bash(echo *)",
+      "Bash(pwd)",
+      "Bash(env)",
+      "Bash(docker *)",
+      "Bash(docker-compose *)"
+    ],
+    "deny": [
+      "Bash(rm *)",
+      "Bash(rm -rf *)",
+      "Bash(git push --force *)",
+      "Bash(git push -f *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean -f *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(sudo *)",
+      "Bash(chmod 777 *)",
+      "Bash(> /dev/*)",
+      "Bash(dd *)"
+    ]
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "__HOME__/.claude/hooks/notify.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "__HOME__/.claude/hooks/protect-sensitive.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
