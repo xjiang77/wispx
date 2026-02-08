@@ -1,0 +1,23 @@
+{
+  "name": "skill-toolkit",
+  "version": "1.0.0",
+  "description": "A comprehensive toolkit for the skill lifecycle: create, discover, review, audit, and package agent skills into production-ready plugins.",
+  "author": {
+    "name": "Hongqi Liu"
+  },
+  "keywords": ["skills", "toolkit", "creator", "auditor", "packager"],
+  "skills": [
+    "skills/skill-creator",
+    "skills/find-skills",
+    "skills/skill-reviewer",
+    "skills/skill-auditor",
+    "skills/skill-packager"
+  ],
+  "commands": [
+    "commands/create-skill.md",
+    "commands/find-skill.md",
+    "commands/review-skill.md",
+    "commands/audit-skills.md",
+    "commands/package-plugin.md"
+  ]
+}
