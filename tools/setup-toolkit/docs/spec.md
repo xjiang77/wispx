@@ -28,7 +28,7 @@
 ### 数据流
 
 ```
-toolkit repo (agent-wisp/tools/setup-toolkit/)
+toolkit repo (wispx/tools/setup-toolkit/)
     │
     ├── make install
     │   ├── dotclaude/* → ~/.claude/*
@@ -282,7 +282,7 @@ lib/
 ### 安装
 
 ```bash
-cd agent-wisp/tools/setup-toolkit
+cd wispx/tools/setup-toolkit
 make install
 ```
 
@@ -305,8 +305,8 @@ make init-project P=/path/to/project
 
 ```bash
 # 新机器
-git clone <repo> agent-wisp
-cd agent-wisp/tools/setup-toolkit
+git clone <repo> wispx
+cd wispx/tools/setup-toolkit
 make install
 ```
 

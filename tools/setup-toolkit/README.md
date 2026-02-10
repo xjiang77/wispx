@@ -12,10 +12,10 @@
 
 ```bash
 # Clone repo (如果还没有)
-git clone <repo-url> agent-wisp
+git clone <repo-url> wispx
 
 # Install
-cd agent-wisp/tools/setup-toolkit
+cd wispx/tools/setup-toolkit
 make install
 
 # Verify
@@ -79,7 +79,7 @@ make init-project P=/path/to/my-project
 
 ```bash
 # 新机器上
-git clone <repo> && cd agent-wisp/tools/setup-toolkit && make install
+git clone <repo> && cd wispx/tools/setup-toolkit && make install
 ```
 
 ## 跨 Agent 同步

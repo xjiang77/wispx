@@ -5,7 +5,7 @@
 ## 基础路径
 
 ```
-/Users/kevinxjiang/Workspace/agent-wisp/research/source/opencode-dev/
+/Users/kevinxjiang/Workspace/wispx/research/source/opencode-dev/
 ```
 
 ---
